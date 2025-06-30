@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashcard Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="flashcard" id="card" tabindex="0">
+    <div class="front" id="question"></div>
+    <div class="back" id="answer"></div>
+  </div>
+
+  <div class="controls">
+    <button id="prev-btn">Previous</button>
+    <button id="next-btn">Next</button>
+    <button id="mark-btn">Mark for Review</button>
+    <button id="toggle-review">Toggle Review Mode</button>
+    <button id="toggle-wrong">Review Wrong Answers</button>
+    <button id="toggle-shuffle">Shuffle Questions</button>
+    <button id="toggle-dark">Dark Mode</button>
+    <button id="start-pomodoro">Start Timer</button>
+  </div>
+<div class="search-bar">
+  <input type="text" id="search-input" placeholder="Search question..." />
+  <button id="search-btn">Search</button>
+</div>
+    <div class="marked-questions" id="marked-questions">
+        <h2>Marked Questions</h2>
+        <ul id="marked-list"></ul>
+  <div class="progress" id="progress"></div>
+  <div class="timer" id="timer">25:00</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
